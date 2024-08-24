@@ -29,4 +29,6 @@ int main() {
         default:
             cout << "bad: " << data << endl;
     }
+
+    return 0;
 }
