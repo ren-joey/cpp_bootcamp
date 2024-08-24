@@ -11,3 +11,15 @@ Since the compiling process will generate files with no extension name, so the f
 `\*` tells git to ignore everything. <br>
 `!*/` then unignores anything that is a directory. This is crucial. <br>
 `!*.*` unignores all files with an extension. <br>
+
+## Templates
+```c++
+#include <iostream>
+
+using namespace std;
+
+int main ()
+{
+    return 0;
+}
+```
