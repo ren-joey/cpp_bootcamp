@@ -1,10 +1,5 @@
 #include <iostream>
 
-/**
- * These practices were following the course list of "C++ Programming Bootcamp 2023"
- * https://www.youtube.com/playlist?list=PLsjuuR8X0yM2IvBExLsQFEyjxyNdq20A8
- */
-
 using namespace std;
 
 int main() {
