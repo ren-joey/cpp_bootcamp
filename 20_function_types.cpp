@@ -2,11 +2,17 @@
 
 using namespace std;
 
-// Functions:
-// 1. has no arguments and no return values
-// 2. has arguments but no return values
-// 3. has no arguments and has return values
-// 4. has arguments and return values
+/**
+ * Types of Functions:
+ * 1. has no arguments and no return values
+ *      void test() {}
+ * 2. has arguments but no return values
+ *      void test(int num) {}
+ * 3. has no arguments and has return values
+ *      int test() {return num}
+ * 4. has arguments and return values
+ *      int test(int num) {return num}
+ */
 
 void prime()
 {
