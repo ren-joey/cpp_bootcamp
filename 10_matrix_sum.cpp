@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int main ()
+int main()
 {
     int matrix1[3][3] = {
         {1, 2, 3},

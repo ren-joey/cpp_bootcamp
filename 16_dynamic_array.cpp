@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int main ()
+int main()
 {
     int size;
     cout << "enter a size of an array: ";

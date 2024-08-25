@@ -18,7 +18,7 @@ Since the compiling process will generate files with no extension name, so the f
 
 using namespace std;
 
-int main ()
+int main()
 {
     return 0;
 }

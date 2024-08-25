@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int main ()
+int main()
 {
     /**
      * static memory(smaller) -> stake memory -> compile time

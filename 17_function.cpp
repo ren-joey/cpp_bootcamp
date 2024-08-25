@@ -6,7 +6,7 @@ using namespace std;
 void print_something();
 float add(float, float);
 
-int main ()
+int main()
 {
     print_something();
     print_something();

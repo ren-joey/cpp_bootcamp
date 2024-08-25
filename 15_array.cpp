@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int main ()
+int main()
 {
     int arr[] = {1, 2, 3, 4, 5};    // if the right side didn't initialize the array,
                                     // you should mention the size of the array at first (ex. int att[5])

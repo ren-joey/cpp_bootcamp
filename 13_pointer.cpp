@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int main ()
+int main()
 {
     // the data type of variable and *ptr should match
     int var = 99;

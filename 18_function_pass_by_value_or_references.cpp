@@ -3,7 +3,7 @@
 using namespace std;
 
 // pass by value
-void swap (int num1, int num2)
+void swap(int num1, int num2)
 {
     int temp;
     temp = num1;
@@ -17,7 +17,7 @@ void swap (int num1, int num2)
 }
 
 // pass by reference
-void swap_by_ref (int &num1, int &num2)
+void swap_by_ref(int &num1, int &num2)
 {
     int temp;
     temp = num1;
@@ -27,7 +27,7 @@ void swap_by_ref (int &num1, int &num2)
 
 // pass by reference (using pointer)
 // will also work
-void swap_by_ref_addr (int *num1, int *num2)
+void swap_by_ref_addr(int *num1, int *num2)
 {
     int temp;
     temp = *num1;
@@ -35,7 +35,7 @@ void swap_by_ref_addr (int *num1, int *num2)
     *num2 = temp;
 }
 
-int main ()
+int main()
 {
     int num1 = 9, num2 = 7, temp;
     cout << "num1 = " << num1 << ", num2 = " << num2 << endl;
