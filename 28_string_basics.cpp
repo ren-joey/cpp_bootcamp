@@ -7,7 +7,8 @@ int main()
 {
     char chr = 'a';
     char str[] = {'a', 'b', 'c', 'd', 'e', '\0'};
-    char str2[] = "abcde";
+    char str2[] = "abcde"; // you can only assign a string to a char array while initializing
+    // str2 = "abcdef"; // incorrect,
     string a = "abcde";
 
     cout << chr << endl;
