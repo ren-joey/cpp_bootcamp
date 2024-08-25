@@ -12,7 +12,14 @@ void print(int arr[], int size)
 
 }
 
-void multiply(int)
+void multiply(int arr[], int size)
+{
+    for (int i = 0; i < size; i += 1)
+    {
+        arr[i] *= 3;
+    }
+
+}
 
 int main()
 {
@@ -20,6 +27,11 @@ int main()
     int arr[] = {1, 2, 3, 4, 5};
     int size = sizeof(arr) / sizeof(int);
 
+    cout << "Before multiply: " << endl;
+    print(arr, size);
+
+    multiply(arr, size);
+    cout << "After multiply: " << endl;
     print(arr, size);
 
     return 0;
