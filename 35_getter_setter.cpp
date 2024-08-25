@@ -5,27 +5,27 @@ using namespace std;
 
 class member
 {
-    private:
-        int a;
-        int b;
+private:
+    int a;
+    int b;
 
-    public:
-        int get_a()
-        {
-            return a;
-        }
-        int get_b()
-        {
-            return b;
-        }
-        void set_a(int val)
-        {
-            a = val;
-        }
-        void set_b(int val)
-        {
-            b = val;
-        }
+public:
+    int get_a()
+    {
+        return a;
+    }
+    int get_b()
+    {
+        return b;
+    }
+    void set_a(int val)
+    {
+        a = val;
+    }
+    void set_b(int val)
+    {
+        b = val;
+    }
 };
 
 int main()

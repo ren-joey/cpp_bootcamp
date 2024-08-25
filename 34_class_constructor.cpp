@@ -5,51 +5,53 @@ using namespace std;
 
 class member
 {
-    private:
-        int a;
-        int b;
-    public:
-        string name;
-        int age;
-        char phone[10];
+private:
+    int a;
+    int b;
 
-        // Constructor is a public function whose name is the same as the class name
-        // member() {
-        //     cout << "Constructor is running..." << endl;
-        //     name = "unknown";
-        //     age = NAN;
-        //     strcpy(phone, "unknown");
-        // }
-        // the same as the above constructor expression
-        member(): name("unknown"), age(NAN) {
-            strcpy(phone, "unknown");
-        }
-        member(int input_a, int input_b)
-        {
-            member();
-            assign_private_numbers(input_a, input_b);
-        }
+public:
+    string name;
+    int age;
+    char phone[10];
 
-        void print()
-        {
-            cout << "Member name: " << name << ", age: " << age << ", phone: " << phone << endl;
-        }
+    // Constructor is a public function whose name is the same as the class name
+    // member() {
+    //     cout << "Constructor is running..." << endl;
+    //     name = "unknown";
+    //     age = NAN;
+    //     strcpy(phone, "unknown");
+    // }
+    // the same as the above constructor expression
+    member() : name("unknown"), age(NAN)
+    {
+        strcpy(phone, "unknown");
+    }
+    member(int input_a, int input_b)
+    {
+        member();
+        assign_private_numbers(input_a, input_b);
+    }
 
-        void assign_private_numbers(int input_a, int input_b)
-        {
-            a = input_a;
-            b = input_b;
-        }
+    void print()
+    {
+        cout << "Member name: " << name << ", age: " << age << ", phone: " << phone << endl;
+    }
 
-        void print_private_numbers()
-        {
-            cout << "Private a is: " << a << ", private b is: " << b <<endl;
-        }
+    void assign_private_numbers(int input_a, int input_b)
+    {
+        a = input_a;
+        b = input_b;
+    }
 
-        ~member()
-        {
-            cout << "Destructor is running..." << endl;
-        }
+    void print_private_numbers()
+    {
+        cout << "Private a is: " << a << ", private b is: " << b << endl;
+    }
+
+    ~member()
+    {
+        cout << "Destructor is running..." << endl;
+    }
 };
 
 int main()

@@ -5,48 +5,50 @@ using namespace std;
 
 class dynamic_array
 {
-    private:
-        string name;
-        int size;
-        int *marks;
-    public:
-        // delegating constructor (C++11 and above)
-        dynamic_array(): dynamic_array(3) {}
-        dynamic_array(int val): size(val) {
-            marks = new int[size];
-        }
-        ~dynamic_array()
-        {
-            delete[] marks;
-        }
-        void set_name()
-        {
-            string val;
-            cout << "Enter the student name: " << endl;
-            cin >> val;
-            name = val;
-        }
+private:
+    string name;
+    int size;
+    int *marks;
 
-        void marks_input()
-        {
-            cout << "Enter the subject marks: " << endl;
-            cout << "size is: " << size << endl;
-            for (int i = 0; i < size; i += 1)
-            {
-                cout << "subject #" << i+1 << ": ";
-                cin >> marks[i];
-            }
-        }
+public:
+    // delegating constructor (C++11 and above)
+    dynamic_array() : dynamic_array(3) {}
+    dynamic_array(int val) : size(val)
+    {
+        marks = new int[size];
+    }
+    ~dynamic_array()
+    {
+        delete[] marks;
+    }
+    void set_name()
+    {
+        string val;
+        cout << "Enter the student name: " << endl;
+        cin >> val;
+        name = val;
+    }
 
-        void print()
+    void marks_input()
+    {
+        cout << "Enter the subject marks: " << endl;
+        cout << "size is: " << size << endl;
+        for (int i = 0; i < size; i += 1)
         {
-            cout << "Student name: " << name << endl;
-            for (int i = 0; i < size; i += 1)
-            {
-                cout << "subject #" << i+1 << ": ";
-                cout << marks[i] << endl;
-            }
+            cout << "subject #" << i + 1 << ": ";
+            cin >> marks[i];
         }
+    }
+
+    void print()
+    {
+        cout << "Student name: " << name << endl;
+        for (int i = 0; i < size; i += 1)
+        {
+            cout << "subject #" << i + 1 << ": ";
+            cout << marks[i] << endl;
+        }
+    }
 };
 
 int main()

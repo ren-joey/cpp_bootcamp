@@ -5,27 +5,28 @@ using namespace std;
 
 class test
 {
-    private:
-        int a;
-        int b;
-    public:
-        static int c;
-        void set_a(int a)
-        {
-            this->a = a;
-        }
-        void set_b(int a)
-        {
-            this->b = a;
-        }
-        int get_a()
-        {
-            return a;
-        }
-        int get_b()
-        {
-            return b;
-        }
+private:
+    int a;
+    int b;
+
+public:
+    static int c;
+    void set_a(int a)
+    {
+        this->a = a;
+    }
+    void set_b(int a)
+    {
+        this->b = a;
+    }
+    int get_a()
+    {
+        return a;
+    }
+    int get_b()
+    {
+        return b;
+    }
 };
 int test::c = 0; // initialize the static value by 0
 
