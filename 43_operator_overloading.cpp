@@ -2,6 +2,18 @@
 
 using namespace std;
 
+/**
+ * Operator Overloading
+ * -----------------------------------------------
+ * 1. Unity operators: i++, i--
+ * 2. Binary operators: a + b, 10 + a (+, -, *, /)
+ * 
+ * Operators Can Not Be Overloaded
+ * -----------------------------------------------
+ * 3. Ternary operator: condition ? a : b
+ * 4. Other operators: ::, .
+ */
+
 class creature
 {
 protected:
@@ -40,27 +52,15 @@ public:
         cout << "Quack!" << endl;
     };
 
-    duck& operator+(int val)
-    {
-        age += val;
-        return *this;
-    };
-
-    duck& operator+(duck d)
-    {
-        age += d.age;
-        return *this;
-    };
-
     // ++operator
-    duck& operator++()
+    duck& operator ++()
     {
         age += 1;
         return *this;
     };
 
     // operator++ or operator+N
-    duck& operator++(int val)
+    duck& operator ++(int val)
     {
         age += 1;
         return *this;
@@ -76,10 +76,8 @@ int main()
 {
     duck my_duck(1);
     my_duck.talk();
-    my_duck = my_duck + 5;
-    my_duck++;
     my_duck.display();
-    my_duck = my_duck + my_duck;
+    my_duck++;
     my_duck.display();
     return 0;
 }
